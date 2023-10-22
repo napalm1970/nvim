@@ -1,4 +1,20 @@
-require "options"
-require "keymaps"
-require "plugins"
-require "neotree"
+require("options")
+require("keymaps")
+require("plugins")
+require("neotree")
+require("treesitter")
+require("lspconf")
+require("cmpconf")
+require("comment")
+require("autopairs")
+require("themes")
+require("masonconf")
+require("telescopeconf")
+require("null_lsconf")
+require("gopherconf")
+require("lspkindconf")
+require("indentblankline")
+require("bufferlineconf")
+require("lualineconf")
+require("colorizerconf")
+require("gitsignsconf")
