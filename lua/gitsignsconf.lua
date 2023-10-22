@@ -46,7 +46,6 @@ require("gitsigns").setup({
 			opts.buffer = bufnr
 			vim.keymap.set(mode, l, r, opts)
 		end
-
 		-- Navigation
 		map("n", "]c", function()
 			if vim.wo.diff then

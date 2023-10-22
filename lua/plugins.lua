@@ -72,4 +72,9 @@ require("lazy").setup({
 	},
 	"norcalli/nvim-colorizer.lua",
 	"lewis6991/gitsigns.nvim",
+	{
+		{ "akinsho/toggleterm.nvim", version = "*", config = true },
+	},
+	{ "folke/neodev.nvim", opts = {} },
+	{ "bfredl/nvim-luadev" },
 })
