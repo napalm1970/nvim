@@ -42,6 +42,7 @@ require("lazy").setup({
 	},
 	"Mofiqul/dracula.nvim",
 	{ "williamboman/mason.nvim" },
+	{ "williamboman/mason-lspconfig.nvim" },
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.4",
@@ -77,4 +78,6 @@ require("lazy").setup({
 	},
 	{ "folke/neodev.nvim", opts = {} },
 	{ "bfredl/nvim-luadev" },
+	{ "echasnovski/mini.animate", version = false },
+	{ "ErichDonGubler/lsp_lines.nvim" },
 })
