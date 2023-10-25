@@ -28,6 +28,7 @@ require("lazy").setup({
 	{ "hrsh7th/cmp-path" },
 	{ "hrsh7th/cmp-cmdline" },
 	{ "hrsh7th/nvim-cmp" },
+	{ "saadparwaiz1/cmp_luasnip" },
 	{
 		"numToStr/Comment.nvim",
 		opts = {
@@ -80,4 +81,8 @@ require("lazy").setup({
 	{ "bfredl/nvim-luadev" },
 	{ "echasnovski/mini.animate", version = false },
 	{ "ErichDonGubler/lsp_lines.nvim" },
+	{
+		"benfowler/telescope-luasnip.nvim",
+		module = "telescope._extensions.luasnip", -- if you wish to lazy-load
+	},
 })
