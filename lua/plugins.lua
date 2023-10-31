@@ -85,4 +85,26 @@ require("lazy").setup({
 		"benfowler/telescope-luasnip.nvim",
 		module = "telescope._extensions.luasnip", -- if you wish to lazy-load
 	},
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		init = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 300
+		end,
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
+	},
+	{
+		"smoka7/hop.nvim",
+		version = "*",
+		opts = {},
+	},
+	{
+		"nvimdev/lspsaga.nvim",
+		after = "nvim-lspconfig",
+	},
 })
