@@ -1,5 +1,9 @@
 -- Setup language servers.
-local lspconfig = require("lspconfig")
+-- local lspconfig = require("lspconfig")
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
 require("lspconfig").lua_ls.setup({})
 require("lspconfig").gopls.setup({
 	cmd = { "gopls" },
@@ -15,6 +19,15 @@ require("lspconfig").clangd.setup({
 	cmd = { "clangd" },
 	filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
 })
+
+require("lspconfig").html.setup({
+	capabilities = capabilities,
+})
+require("lspconfig").cssls.setup({
+	capabilities = capabilities,
+})
+
+require("lspconfig").cssmodules_ls.setup({})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

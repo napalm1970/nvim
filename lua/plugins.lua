@@ -107,4 +107,8 @@ require("lazy").setup({
 		"nvimdev/lspsaga.nvim",
 		after = "nvim-lspconfig",
 	},
+	{
+		"barrett-ruth/live-server.nvim",
+		config = true,
+	},
 })
