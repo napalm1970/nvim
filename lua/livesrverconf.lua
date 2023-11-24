@@ -1,1 +1,3 @@
-require("live-server").setup()
+require("live-server").setup({
+	-- args = { "--port=7777", "--browser=google-chrome-stable" },
+})
